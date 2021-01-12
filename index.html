@@ -1,43 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jokenpo TV05</title>
+    <title>Jokenpo</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="stylesheet" href="style.css">
-    <script src="./app.js" defer></script>
 </head>
+
 <body>
     <header>
-        <h1> Jokenpo</h1>
+        <h1> Jokenpo </h1>
     </header>
-    <div class="scoreboard">
-        <p id="scores">
-            <span id="userScore">0</span>:<span id="compScore">0</span>
-        </p>
-        <p id="userLabel" class="scoreLabel">user</p>
-        <p id="compLabel" class="scoreLabel">comp</p>
-    </div>
 
-    <div class="result">
-        <p id="result"> Faça sua jogada </p>
+    <div class="container-fluid" style="padding-top: 10%;">
+        <div class="row justify-content-center">
+            <form action='/play/index.html' method="get" class="col-xl-4">
+                <input name="name" class="form-control" placeholder="Insira seu nome" required/>
+                <input name="room" style="margin-top: 10px;" class="form-control" placeholder="Insira sua sala" required/>
+                <div class="buttonWrap">
+                    <button id="enterButton" class="enterButton" type="submit">Entrar</button>
+                </div>
+            </form>
+        </div>
     </div>
-
-    <div class="buttons">
-        <img src="./images/paper.png" id="paperButton" alt="Papel">
-        <img src="./images/rock.png" id="rockButton" alt="Pedra">
-        <img src="./images/scissors.png" id="scissorsButton" alt="Tesoura">
-    </div>
-    
-    <footer>
-        <p>Faça sua jogada.</p>
-    </footer>
-
-    <div class="buttonWrap">
-        <button id="resetButton" class="resetButton" type="submit">Resetar</button>
-    </div>
-    
-    
-    <!-- <script src="./app.js"></script> -->
 </body>
+
 </html>
