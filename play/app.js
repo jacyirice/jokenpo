@@ -97,7 +97,7 @@ const roomname = myParam.room || 'teste'
 const myusername = myParam.name || 'strange'
 
 const playSocket = new WebSocket(
-    'ws://' +
+    'wss://' +
     url_backend
 );
 
