@@ -7,7 +7,7 @@ const scissorsButton_img = document.getElementById('scissorsButton');
 const result_p = document.getElementById('result');
 const jogadas_p = document.getElementById('jogadas');
 const scores_p = document.getElementById('scores');
-const url_backend = 'https://jokenp-node.herokuapp.com/';
+const url_backend = 'ws://jokenp-node.herokuapp.com/';
 const url_frontend = 'https://jacyirice.github.io/jokenpo/';
 
 // função para traduzir as jogadas
